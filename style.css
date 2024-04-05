@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+:root {
+    --main-yellow: yellow;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    /* border : 1px solid red; */
+    font-size: 8vw;
+    font-family: "Orbitron", sans-serif;
+    padding: 2.2vw;
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 15px;
+    width: 40vw;
+}
+
+.box {
+    /* padding: 12px 20px; */
+    /* border: 1px solid green; */
+    background-color: var(--main-yellow);
+    border-radius: 12px;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    padding: 12px 6px;
+}
+
+/* css for alarm section */
+.alarm-container {
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.alarm-container #setAlarmBtn {
+    padding: 8px 15px;
+    background-color: var(--main-yellow);
+    width: 20%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.alarm-container #setAlarmBtn:hover{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.alarmSetSection{
+    font-size: 1.2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.alarmInput{
+    display: flex;
+    gap: 15px;
+}
+.alarmInput span{
+    border : 1px solid grey;
+    padding: 8px 12px;
+    border-radius: 5px;
+    /* text-align: center; */
+}
+.alarmInput span input{
+   width: 30px;
+   padding: 3px 6px;
+   font-size: 20px;
+}
+
+.alarmInputbtn{
+    margin-top: 12px;
+}
+.alarmInputbtn button{
+    margin-top: 2px;
+    padding: 5px 10px;
+}
+
+.alarmInput .meridiems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for show alarm section  */
+.showAlarmSection{
+    font-size: 12px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 8px;
+}
+
+.showAlarmSection .alarm{
+    background-color: var(--main-yellow);
+    border: 1px solid black;;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    width: 60px;
+    cursor: pointer;
+}

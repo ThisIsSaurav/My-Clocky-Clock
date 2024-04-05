@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Clocky Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <!-- Hey AI i am making a clock -->
+    <!-- This is a container for showing hour , minute and second. -->
+    <div class="container">
+        <div class="box" id="hour">01</div>
+        <div class="dot">:</div>
+        <div class="box" id="min">01</div>
+        <div class="dot">:</div>
+        <div class="box" id="sec">01</div>
+    </div>
+
+    <div class="container alarm-container">
+        <button id="setAlarmBtn">Add Alarm</button>
+        <div class="alarmSetSection display-none" id="setAlarmSection">
+            <div class="alarmInput">
+                <span>Hour :- <input type="text" id="hourText"></span>
+                <span>Minute :- <input type="text" id="minText"></span>
+                <span class="meridiems">
+                    AM:-<input type="radio" name="meridiem" id="anteMeridiem" class="meridiem">
+                    PM:-<input type="radio" name="meridiem" id="postMeridiem" class="meridiem">
+                </span>
+            </div>
+            <div class="alarmInputbtn"><button id="addAlarmBtn">Set alarm</button></div>
+        </div>
+
+        <div class="showAlarmSection" id="showAlarmSection">
+            <span>Your alarms :- </span>
+            <!-- <div class="alarm">
+                <span id="alarmHour">09</span>
+                <span id="alarmDot">:</span>
+                <span id="alarmmin">38</span>
+            </div>
+            <div class="alarm">
+                <span id="alarmHour">09</span>
+                <span id="alarmDot">:</span>
+                <span id="alarmmin">38</span>
+            </div>
+            <div class="alarm">
+                <span id="alarmHour">09</span>
+                <span id="alarmDot">:</span>
+                <span id="alarmmin">38</span>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
